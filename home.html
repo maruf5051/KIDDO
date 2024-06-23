@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header part start-->
+    <header class="header">
+        <section class="flex">
+            <!-- menu btn-->
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <!--Logo-->
+            <a href="home.html" class="logo"><img src="images/logo1.png" class= "logo"></a>
+
+            <!--Search ber-->
+            <form action="search.html" method="post" class="search-form">
+                <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+                <!--Search icon-->
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+
+            <!-- user-btn & toggle-btn -->
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <!-- Pop-up profile -->
+            <div class="profile">
+                <img src="images/profile1.png" class="image" alt="">
+                <h3 class="name">Maruf Sikder</h3>
+                <p class="role">student</p>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Header part end-->
+
+    <!-- side bar start-->
+    <div class="side-bar">
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+            <img src="images/profile1.png" class="image" alt="">
+            <h3 class="name">maruf sikder</h3>
+            <p class="role">student</p>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+    </div>
+    <!-- side bar end-->
+
+    <!--Home page start-->
+    <!--Quick option start-->
+    <section class="home-grid">
+        <h1 class="heading">quick options</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3 class="title">likes and comments</h3>
+                <p class="likes">total likes : <span>25</span></p>
+                <a href="#" class="inline-btn">view likes</a>
+                <p class="likes">total comments : <span>12</span></p>
+                <a href="#" class="inline-btn">view comments</a>
+                <p class="likes">saved playlists : <span>4</span></p>
+                <a href="#" class="inline-btn">view playlists</a>
+            </div>
+            <!--Quick option end-->
+            <!--Top category start-->
+            <div class="box">
+                <h3 class="title">top categories</h3>
+                <div class="flex">
+                    <a href="#"><i class="fa-solid fa-gamepad"></i><span>game</span></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i><span>video</span></a>
+                    <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
+                    <a href="#"><i class="fa-solid fa-otter"></i><span>animal</span></a>
+                    <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
+                    <a href="#"><i class="fa-solid fa-utensils"></i><span>food</span></a>
+                </div>
+            </div>
+            <!--Top category end-->
+            <!--Popular topics start-->
+            <div class="box">
+                <h3 class="title">popular topics</h3>
+                <div class="flex">
+                    <a href="#"><i class="fa-solid fa-palette"></i><span>Art</span></a>
+                    <a href="#"><i class="fa-solid fa-font"></i><span>Alphabet</span></a>
+                    <a href="#"><i class="fa-solid fa-book-open-reader"></i><span>Poem</span></a>
+                    <a href="#"><i class="fa-solid fa-plus-minus"></i><span>Math</span></a>
+                    <a href="#"><i class="fa-solid fa-child-reaching"></i><span>Fun</span></a>
+                </div>
+            </div>
+            <!--Popular topics end-->
+            <!--About section start-->
+            <div class="box">
+                <h3 class="title">about us</h3>
+                <p class="tutor">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nam?</p>
+                <a href="about.html" class="inline-btn">get started</a>
+            </div>
+            <!--About section end-->
+        </div>
+    </section>
+    <!--Today learn start-->
+    <section class="home-grid">
+        <h1 class="heading">What would you like to learn today?</h1>
+
+        <!-- Button group start using bootstrap-->
+        <div class="flex-btn" style="padding-bottom: 30px;">
+            <button type="button" id="style" class="btn" checked>Alphabet</button>
+            <button type="button" class="btn" id="style">English</button>
+            <button type="button" class="btn" id="style">Mathematics</button>
+            <button type="button" class="btn" id="style">Science</button>
+            <button type="button" class="btn" id="style">Country</button>
+            <button type="button" class="btn" id="style">Food</button>
+          </div>
+          <!-- Button group end -->
+          
+          
+        <div class="box-container">
+            <div class="box">
+                <h3 class="title">Learn Alphabet</h3>
+                <img class="img" src="images/alphabet.png" alt="">
+                <a href="playlist.html" class="inline-btn">get started</a>
+            </div>
+            <div class="box">
+                <h3 class="title">Alphabet Writing</h3>
+                <img class="img" src="images/alphabetwriting.png" alt="">
+                <a href="#" class="inline-btn">get started</a>
+            </div>
+            <div class="box">
+                <h3 class="title">Alphabet reading</h3>
+                <img class="img" src="images/alphabetreading.png" alt="">
+                <a href="#" class="inline-btn">get started</a>
+            </div>
+            <div class="box">
+                <h3 class="title">Alphabet practice</h3>
+                <img class="img" src="images/Alphabetpractice.jpg" alt="">
+                <a href="#" class="inline-btn">get started</a>
+            </div>
+        </div>
+    </section>
+    <!--Today learn end-->
+    <!--course section start-->
+    <section class="courses">
+        <h1 class="heading">our courses</h1>
+          
+        <div class="box-container">
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-2.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/Alpha.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">Learn Alphabet with fun</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-3.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/math.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">Learn Mathematics playing game</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-4.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/poem.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">Learn poem with fun</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-5.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/english.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">English Learning</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-3.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/country.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">Learn Country name with fun</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-7.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/science.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">Learn Science</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+            <div class="box">
+                <div class="tutor">
+                    <img src="images/pic-7.jpg" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>21-10-2022</span>
+                    </div>
+                </div>
+                <div class="thumb">
+                    <img src="images/food.png" alt="">
+                    <span>10 videos</span>
+                </div>
+                <h3 class="title">Learn Food name with fun</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+        </div>
+        <div class="more-btn">
+            <a href="courses.html" class="inline-option-btn">view all courses</a>
+        </div>
+        <!--course section end-->
+    </section>
+    <!--Home page end-->
+    <!--Footer start-->
+    <footer class="footer">
+         &copy; copyright @ 2022 by <span>KIDDO</span> | all rights reserved!
+    </footer>
+    <!--Footer end-->
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
